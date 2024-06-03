@@ -1,9 +1,13 @@
-let printSegitiga = 5
+const printSegitiga = 5
 
-for(let i = printSegitiga; i >= 0; i--){
-    let string = ""
-    for (let j =1; j <= i; j++){
-        string += printSegitiga
+if(typeof printSegitiga === "number"){
+    for(let i = printSegitiga; i > 0; i--){
+        let hasil = ""
+    for (let j = 1; j <= i; j++){
+        hasil = hasil + j
     }
-    console.log(string)
+    console.log(hasil)
+}
+}else{
+    console.log("Data harus number")
 }
