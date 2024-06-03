@@ -3,19 +3,36 @@ const biodata = {
     age : 25,
     hobbies : ["Gaming", "Bermain Musik"],
     isMarried : false,
-    schoolList : {
-        keyName : "SMKN 10 Surabaya",
+    schoolList : [{
+        name : "SMKN 10 Surabaya",
         yearIn : 2015,
+        yearOut : 2017,
         major : "Multimedia"
-    }, 
-    skills : {
-        skillName : "Javascript",
-        level : ["Beginner" , "Advance", "Expert"]
     },
+    {
+        name : "SMP Untag 1945 Surabaya",
+        yearIn : 2013,
+        yearOut : 2015,
+        major : null
+    }
+], 
+    skills : [{
+        skillName : "Javascript",
+        level : ["Beginner"]
+    },
+    {
+        skillName : "CSS",
+        level : ["Beginner"]
+    }
+],
     interestInCoding : true
 }
 
-console.log("Nama saya adalah " + biodata.name)
+// if(biodata.skills[1].level === "Beginner"){
+//     console.log("Yuk Belajar lagi")
+// }
+// console.log("Nama saya adalah " + biodata.name)
+// console.log(biodata.schoolList[1].name)
 // console.log(biodata.age)
 // console.log(biodata.hobbies[1])
 // console.log(biodata.isMarried)
