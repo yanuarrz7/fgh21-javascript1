@@ -13,12 +13,16 @@ let data = {
     website : "hildegard.org",
 }
 
+// spread operator
 
+const newData = {
+    ...data, name : "Rizky Yanuar Ramadhan",
+    email : "yanuarrz71@gmail.com",
+    hobby : ['Gaming', 'Musik']
+}
+console.log(newData)
 
-const {name, username, email} = data
-const dataCombined = {name, username, email}
- console.log(dataCombined)
-
-const {address : {street , city}} = data
+// desctructing 'street' and 'city'
+const {street , city} = data.address
 console.log(street)
 console.log(city)
